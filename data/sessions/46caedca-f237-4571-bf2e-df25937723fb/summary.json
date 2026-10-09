@@ -1,0 +1,103 @@
+{
+  "session_id": "46caedca-f237-4571-bf2e-df25937723fb",
+  "filename": "fitness_center_dataset.csv",
+  "shape": {
+    "rows": 152,
+    "columns": 9
+  },
+  "columns": [
+    "Member_ID",
+    "Age",
+    "Gender",
+    "Membership_Type",
+    "Attendance",
+    "Workout_Hours",
+    "Calories_Burned",
+    "Weight",
+    "Fitness_Score"
+  ],
+  "numerical_columns": [
+    "Age",
+    "Attendance",
+    "Workout_Hours",
+    "Calories_Burned",
+    "Weight",
+    "Fitness_Score"
+  ],
+  "categorical_columns": [
+    "Member_ID",
+    "Gender",
+    "Membership_Type"
+  ],
+  "date_columns": [],
+  "missing_values": {
+    "Member_ID": 0,
+    "Age": 2,
+    "Gender": 1,
+    "Membership_Type": 1,
+    "Attendance": 2,
+    "Workout_Hours": 1,
+    "Calories_Burned": 2,
+    "Weight": 2,
+    "Fitness_Score": 2
+  },
+  "duplicates": 2,
+  "summary_text": "This dataset contains 152 records and 9 variables. There are 6 numerical, 3 categorical, and 0 date column(s). 8 column(s) contain missing values.",
+  "sample_rows": [
+    {
+      "Member_ID": "M001",
+      "Age": 56.0,
+      "Gender": "Female",
+      "Membership_Type": "Standard",
+      "Attendance": 27.0,
+      "Workout_Hours": 15.6,
+      "Calories_Burned": 7040.0,
+      "Weight": 82.6,
+      "Fitness_Score": 94.4
+    },
+    {
+      "Member_ID": "M002",
+      "Age": 46.0,
+      "Gender": "Female",
+      "Membership_Type": "Premium",
+      "Attendance": 22.0,
+      "Workout_Hours": 12.3,
+      "Calories_Burned": 5654.0,
+      "Weight": 66.9,
+      "Fitness_Score": 75.1
+    },
+    {
+      "Member_ID": "M003",
+      "Age": 32.0,
+      "Gender": "Female",
+      "Membership_Type": "Standard",
+      "Attendance": 7.0,
+      "Workout_Hours": 4.1,
+      "Calories_Burned": 2248.0,
+      "Weight": 72.4,
+      "Fitness_Score": 40.5
+    },
+    {
+      "Member_ID": "M004",
+      "Age": 60.0,
+      "Gender": "Female",
+      "Membership_Type": "Standard",
+      "Attendance": 13.0,
+      "Workout_Hours": 8.8,
+      "Calories_Burned": 4594.0,
+      "Weight": 83.6,
+      "Fitness_Score": 52.4
+    },
+    {
+      "Member_ID": "M005",
+      "Age": 25.0,
+      "Gender": "Male",
+      "Membership_Type": "Standard",
+      "Attendance": 25.0,
+      "Workout_Hours": 10.7,
+      "Calories_Burned": 4671.0,
+      "Weight": 64.4,
+      "Fitness_Score": 87.1
+    }
+  ]
+}

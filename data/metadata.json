@@ -1,0 +1,108 @@
+{
+  "datasets": [
+    {
+      "key": "plfs",
+      "name": "PLFS",
+      "full_name": "Periodic Labour Force Survey",
+      "file": "data/plfs.json",
+      "frequency": "Annual",
+      "years_covered": "2017-18 to 2023-24",
+      "indicators": ["LFPR", "WPR", "UR"],
+      "dimensions": ["year", "area (Rural/Urban)", "gender (Male/Female/Persons)"],
+      "sample_queries": [
+        "What is the unemployment rate in rural India for 2023-24?",
+        "Show me female LFPR trend from 2017-18 to 2023-24.",
+        "Compare urban and rural WPR for males in 2022-23."
+      ]
+    },
+    {
+      "key": "cpi",
+      "name": "CPI",
+      "full_name": "Consumer Price Index",
+      "file": "data/cpi.json",
+      "frequency": "Monthly",
+      "years_covered": "2019 to 2024",
+      "indicators": ["General CPI", "Food CPI", "Fuel CPI", "YoY Inflation %"],
+      "dimensions": ["year", "month"],
+      "sample_queries": [
+        "What was the CPI inflation in July 2023?",
+        "Show food inflation trend in 2022.",
+        "What was the highest inflation month in 2022?"
+      ]
+    },
+    {
+      "key": "nas",
+      "name": "NAS",
+      "full_name": "National Accounts Statistics",
+      "file": "data/nas.json",
+      "frequency": "Annual",
+      "years_covered": "2014-15 to 2023-24",
+      "indicators": ["GDP", "GVA", "Agriculture growth", "Industry growth", "Services growth", "GCF", "PFCE"],
+      "dimensions": ["year", "sector"],
+      "sample_queries": [
+        "What was India's GDP growth in 2023-24?",
+        "Show sector-wise GVA composition in 2022-23.",
+        "How did GDP perform during COVID-19 (2020-21)?"
+      ]
+    },
+    {
+      "key": "iip",
+      "name": "IIP",
+      "full_name": "Index of Industrial Production",
+      "file": "data/iip.json",
+      "frequency": "Monthly",
+      "years_covered": "2022 to 2024",
+      "indicators": ["General IIP", "Mining", "Manufacturing", "Electricity", "Capital Goods", "Consumer Durables", "Consumer Non-Durables", "Infrastructure"],
+      "dimensions": ["year", "month", "sector"],
+      "sample_queries": [
+        "What was the IIP general index in March 2024?",
+        "Show manufacturing growth trend in 2023.",
+        "Compare capital goods and consumer durables IIP."
+      ]
+    },
+    {
+      "key": "asi",
+      "name": "ASI",
+      "full_name": "Annual Survey of Industries",
+      "file": "data/asi.json",
+      "frequency": "Annual",
+      "years_covered": "2016-17 to 2022-23",
+      "indicators": ["factories", "workers", "output", "value added", "wages", "fixed capital"],
+      "dimensions": ["year"],
+      "sample_queries": [
+        "How many factories were registered in 2021-22?",
+        "What was industrial output in 2022-23?",
+        "Show trend of industrial workers from 2016-17 to 2022-23."
+      ]
+    },
+    {
+      "key": "literacy",
+      "name": "Literacy Rate",
+      "full_name": "Literacy Rate in India",
+      "file": "data/literacy.json",
+      "frequency": "Decadal / Periodic",
+      "years_covered": "2011, 2017-18",
+      "indicators": ["Literacy Rate"],
+      "dimensions": ["year", "area", "gender"],
+      "sample_queries": [
+        "What is the literacy rate in India?",
+        "Show female literacy rate in rural areas."
+      ]
+    },
+    {
+      "key": "poverty",
+      "name": "Poverty Rate",
+      "full_name": "Poverty Estimates",
+      "file": "data/poverty.json",
+      "frequency": "Periodic",
+      "years_covered": "2004-05, 2011-12",
+      "indicators": ["Poverty Ratio"],
+      "dimensions": ["year", "area"],
+      "sample_queries": [
+        "What is the poverty rate in rural India?",
+        "Show poverty ratio trend."
+      ]
+    }
+  ],
+  "disclaimer": "Data in this application is based on official MoSPI publications. Sample seed values are sourced from publicly available MoSPI reports. Always verify critical decisions against the latest official MoSPI publications at https://mospi.gov.in"
+}

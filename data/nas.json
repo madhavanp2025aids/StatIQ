@@ -1,0 +1,100 @@
+{
+  "dataset": "NAS",
+  "full_name": "National Accounts Statistics",
+  "publisher": "MoSPI, Government of India",
+  "description": "GDP and GVA at constant prices (Base Year 2011-12). Annual growth rates and sector-wise composition.",
+  "base_year": "2011-12",
+  "unit": "₹ Lakh Crore (constant prices) / Growth Rate (%)",
+  "data": [
+    {
+      "year": "2014-15",
+      "GDP_LakhCrore": 124.68, "GDP_growth_pct": 7.4,
+      "GVA_total_LakhCrore": 114.88,
+      "Agriculture_pct": 15.4, "Industry_pct": 29.0, "Services_pct": 55.6,
+      "Agriculture_growth": -0.2, "Industry_growth": 7.0, "Services_growth": 9.8,
+      "GCF_pct_GDP": 34.0, "PFCE_pct_GDP": 55.7,
+      "source_doc": "National Accounts Statistics 2024, MoSPI", "table": "1.1 & 1.2"
+    },
+    {
+      "year": "2015-16",
+      "GDP_LakhCrore": 135.76, "GDP_growth_pct": 8.0,
+      "GVA_total_LakhCrore": 124.68,
+      "Agriculture_pct": 15.2, "Industry_pct": 28.5, "Services_pct": 56.3,
+      "Agriculture_growth": 0.6, "Industry_growth": 9.6, "Services_growth": 9.4,
+      "GCF_pct_GDP": 33.5, "PFCE_pct_GDP": 55.3,
+      "source_doc": "National Accounts Statistics 2024, MoSPI", "table": "1.1 & 1.2"
+    },
+    {
+      "year": "2016-17",
+      "GDP_LakhCrore": 145.69, "GDP_growth_pct": 8.3,
+      "GVA_total_LakhCrore": 133.89,
+      "Agriculture_pct": 15.0, "Industry_pct": 28.0, "Services_pct": 57.0,
+      "Agriculture_growth": 6.8, "Industry_growth": 7.7, "Services_growth": 8.9,
+      "GCF_pct_GDP": 32.0, "PFCE_pct_GDP": 55.6,
+      "source_doc": "National Accounts Statistics 2024, MoSPI", "table": "1.1 & 1.2"
+    },
+    {
+      "year": "2017-18",
+      "GDP_LakhCrore": 154.40, "GDP_growth_pct": 6.8,
+      "GVA_total_LakhCrore": 142.19,
+      "Agriculture_pct": 15.3, "Industry_pct": 27.5, "Services_pct": 57.2,
+      "Agriculture_growth": 5.9, "Industry_growth": 5.9, "Services_growth": 8.3,
+      "GCF_pct_GDP": 31.0, "PFCE_pct_GDP": 56.5,
+      "source_doc": "National Accounts Statistics 2024, MoSPI", "table": "1.1 & 1.2"
+    },
+    {
+      "year": "2018-19",
+      "GDP_LakhCrore": 165.77, "GDP_growth_pct": 6.5,
+      "GVA_total_LakhCrore": 152.53,
+      "Agriculture_pct": 15.8, "Industry_pct": 27.6, "Services_pct": 56.6,
+      "Agriculture_growth": 2.1, "Industry_growth": 6.4, "Services_growth": 7.8,
+      "GCF_pct_GDP": 31.3, "PFCE_pct_GDP": 56.8,
+      "source_doc": "National Accounts Statistics 2024, MoSPI", "table": "1.1 & 1.2"
+    },
+    {
+      "year": "2019-20",
+      "GDP_LakhCrore": 170.95, "GDP_growth_pct": 5.5,
+      "GVA_total_LakhCrore": 157.38,
+      "Agriculture_pct": 16.1, "Industry_pct": 26.5, "Services_pct": 57.4,
+      "Agriculture_growth": 4.0, "Industry_growth": 1.2, "Services_growth": 7.0,
+      "GCF_pct_GDP": 30.0, "PFCE_pct_GDP": 56.6,
+      "source_doc": "National Accounts Statistics 2024, MoSPI", "table": "1.1 & 1.2"
+    },
+    {
+      "year": "2020-21",
+      "GDP_LakhCrore": 159.71, "GDP_growth_pct": -5.8,
+      "GVA_total_LakhCrore": 147.01,
+      "Agriculture_pct": 18.4, "Industry_pct": 25.9, "Services_pct": 55.7,
+      "Agriculture_growth": 3.3, "Industry_growth": -4.3, "Services_growth": -8.4,
+      "GCF_pct_GDP": 27.3, "PFCE_pct_GDP": 55.2,
+      "source_doc": "National Accounts Statistics 2024, MoSPI", "table": "1.1 & 1.2"
+    },
+    {
+      "year": "2021-22",
+      "GDP_LakhCrore": 172.66, "GDP_growth_pct": 9.1,
+      "GVA_total_LakhCrore": 158.97,
+      "Agriculture_pct": 18.0, "Industry_pct": 26.5, "Services_pct": 55.5,
+      "Agriculture_growth": 3.5, "Industry_growth": 10.6, "Services_growth": 10.4,
+      "GCF_pct_GDP": 29.5, "PFCE_pct_GDP": 56.7,
+      "source_doc": "National Accounts Statistics 2024, MoSPI", "table": "1.1 & 1.2"
+    },
+    {
+      "year": "2022-23",
+      "GDP_LakhCrore": 184.79, "GDP_growth_pct": 7.2,
+      "GVA_total_LakhCrore": 170.13,
+      "Agriculture_pct": 17.7, "Industry_pct": 26.6, "Services_pct": 55.7,
+      "Agriculture_growth": 4.0, "Industry_growth": 4.4, "Services_growth": 9.5,
+      "GCF_pct_GDP": 31.5, "PFCE_pct_GDP": 56.8,
+      "source_doc": "National Accounts Statistics 2024, MoSPI", "table": "1.1 & 1.2"
+    },
+    {
+      "year": "2023-24",
+      "GDP_LakhCrore": 197.82, "GDP_growth_pct": 8.2,
+      "GVA_total_LakhCrore": 181.47,
+      "Agriculture_pct": 17.1, "Industry_pct": 26.8, "Services_pct": 56.1,
+      "Agriculture_growth": 1.4, "Industry_growth": 9.5, "Services_growth": 7.9,
+      "GCF_pct_GDP": 33.0, "PFCE_pct_GDP": 56.3,
+      "source_doc": "National Accounts Statistics 2024, MoSPI", "table": "1.1 & 1.2"
+    }
+  ]
+}

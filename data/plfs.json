@@ -1,0 +1,182 @@
+{
+  "dataset": "PLFS",
+  "full_name": "Periodic Labour Force Survey",
+  "publisher": "MoSPI, Government of India",
+  "description": "Annual estimates of key labour market indicators — LFPR, WPR and UR — disaggregated by year, gender and area (rural/urban).",
+  "indicators": {
+    "LFPR": "Labour Force Participation Rate (% of population aged 15+)",
+    "WPR": "Worker Population Ratio (% of population aged 15+)",
+    "UR": "Unemployment Rate (% of labour force aged 15+)"
+  },
+  "unit": "Percent (%)",
+  "data": [
+    {
+      "year": "2017-18", "area": "Rural", "gender": "Male",   "LFPR": 55.5, "WPR": 52.1, "UR": 5.8,
+      "source_doc": "PLFS Annual Report 2017-18, MoSPI", "table": "A-1"
+    },
+    {
+      "year": "2017-18", "area": "Rural", "gender": "Female", "LFPR": 17.5, "WPR": 16.1, "UR": 7.7,
+      "source_doc": "PLFS Annual Report 2017-18, MoSPI", "table": "A-1"
+    },
+    {
+      "year": "2017-18", "area": "Rural", "gender": "Persons","LFPR": 36.9, "WPR": 34.5, "UR": 5.3,
+      "source_doc": "PLFS Annual Report 2017-18, MoSPI", "table": "A-1"
+    },
+    {
+      "year": "2017-18", "area": "Urban", "gender": "Male",   "LFPR": 56.3, "WPR": 50.4, "UR": 7.0,
+      "source_doc": "PLFS Annual Report 2017-18, MoSPI", "table": "A-1"
+    },
+    {
+      "year": "2017-18", "area": "Urban", "gender": "Female", "LFPR": 20.4, "WPR": 16.8, "UR": 17.3,
+      "source_doc": "PLFS Annual Report 2017-18, MoSPI", "table": "A-1"
+    },
+    {
+      "year": "2017-18", "area": "Urban", "gender": "Persons","LFPR": 39.2, "WPR": 34.7, "UR": 7.8,
+      "source_doc": "PLFS Annual Report 2017-18, MoSPI", "table": "A-1"
+    },
+    {
+      "year": "2018-19", "area": "Rural", "gender": "Male",   "LFPR": 55.1, "WPR": 52.7, "UR": 4.5,
+      "source_doc": "PLFS Annual Report 2018-19, MoSPI", "table": "A-1"
+    },
+    {
+      "year": "2018-19", "area": "Rural", "gender": "Female", "LFPR": 19.7, "WPR": 18.2, "UR": 7.5,
+      "source_doc": "PLFS Annual Report 2018-19, MoSPI", "table": "A-1"
+    },
+    {
+      "year": "2018-19", "area": "Rural", "gender": "Persons","LFPR": 37.8, "WPR": 36.0, "UR": 5.0,
+      "source_doc": "PLFS Annual Report 2018-19, MoSPI", "table": "A-1"
+    },
+    {
+      "year": "2018-19", "area": "Urban", "gender": "Male",   "LFPR": 55.6, "WPR": 50.7, "UR": 7.1,
+      "source_doc": "PLFS Annual Report 2018-19, MoSPI", "table": "A-1"
+    },
+    {
+      "year": "2018-19", "area": "Urban", "gender": "Female", "LFPR": 20.6, "WPR": 17.5, "UR": 15.4,
+      "source_doc": "PLFS Annual Report 2018-19, MoSPI", "table": "A-1"
+    },
+    {
+      "year": "2018-19", "area": "Urban", "gender": "Persons","LFPR": 38.9, "WPR": 35.3, "UR": 7.7,
+      "source_doc": "PLFS Annual Report 2018-19, MoSPI", "table": "A-1"
+    },
+    {
+      "year": "2019-20", "area": "Rural", "gender": "Male",   "LFPR": 55.0, "WPR": 52.5, "UR": 4.5,
+      "source_doc": "PLFS Annual Report 2019-20, MoSPI", "table": "A-1"
+    },
+    {
+      "year": "2019-20", "area": "Rural", "gender": "Female", "LFPR": 26.4, "WPR": 24.5, "UR": 7.3,
+      "source_doc": "PLFS Annual Report 2019-20, MoSPI", "table": "A-1"
+    },
+    {
+      "year": "2019-20", "area": "Rural", "gender": "Persons","LFPR": 41.0, "WPR": 39.0, "UR": 4.9,
+      "source_doc": "PLFS Annual Report 2019-20, MoSPI", "table": "A-1"
+    },
+    {
+      "year": "2019-20", "area": "Urban", "gender": "Male",   "LFPR": 56.3, "WPR": 51.2, "UR": 6.5,
+      "source_doc": "PLFS Annual Report 2019-20, MoSPI", "table": "A-1"
+    },
+    {
+      "year": "2019-20", "area": "Urban", "gender": "Female", "LFPR": 22.8, "WPR": 19.3, "UR": 15.3,
+      "source_doc": "PLFS Annual Report 2019-20, MoSPI", "table": "A-1"
+    },
+    {
+      "year": "2019-20", "area": "Urban", "gender": "Persons","LFPR": 40.1, "WPR": 35.9, "UR": 7.8,
+      "source_doc": "PLFS Annual Report 2019-20, MoSPI", "table": "A-1"
+    },
+    {
+      "year": "2020-21", "area": "Rural", "gender": "Male",   "LFPR": 57.5, "WPR": 55.5, "UR": 3.5,
+      "source_doc": "PLFS Annual Report 2020-21, MoSPI", "table": "A-1"
+    },
+    {
+      "year": "2020-21", "area": "Rural", "gender": "Female", "LFPR": 31.6, "WPR": 29.2, "UR": 7.5,
+      "source_doc": "PLFS Annual Report 2020-21, MoSPI", "table": "A-1"
+    },
+    {
+      "year": "2020-21", "area": "Rural", "gender": "Persons","LFPR": 44.9, "WPR": 42.7, "UR": 4.9,
+      "source_doc": "PLFS Annual Report 2020-21, MoSPI", "table": "A-1"
+    },
+    {
+      "year": "2020-21", "area": "Urban", "gender": "Male",   "LFPR": 56.6, "WPR": 51.0, "UR": 6.6,
+      "source_doc": "PLFS Annual Report 2020-21, MoSPI", "table": "A-1"
+    },
+    {
+      "year": "2020-21", "area": "Urban", "gender": "Female", "LFPR": 23.3, "WPR": 19.3, "UR": 17.0,
+      "source_doc": "PLFS Annual Report 2020-21, MoSPI", "table": "A-1"
+    },
+    {
+      "year": "2020-21", "area": "Urban", "gender": "Persons","LFPR": 40.7, "WPR": 35.9, "UR": 8.2,
+      "source_doc": "PLFS Annual Report 2020-21, MoSPI", "table": "A-1"
+    },
+    {
+      "year": "2021-22", "area": "Rural", "gender": "Male",   "LFPR": 58.6, "WPR": 56.7, "UR": 3.2,
+      "source_doc": "PLFS Annual Report 2021-22, MoSPI", "table": "A-1"
+    },
+    {
+      "year": "2021-22", "area": "Rural", "gender": "Female", "LFPR": 36.6, "WPR": 34.3, "UR": 6.3,
+      "source_doc": "PLFS Annual Report 2021-22, MoSPI", "table": "A-1"
+    },
+    {
+      "year": "2021-22", "area": "Rural", "gender": "Persons","LFPR": 47.9, "WPR": 45.9, "UR": 4.2,
+      "source_doc": "PLFS Annual Report 2021-22, MoSPI", "table": "A-1"
+    },
+    {
+      "year": "2021-22", "area": "Urban", "gender": "Male",   "LFPR": 57.0, "WPR": 52.6, "UR": 5.8,
+      "source_doc": "PLFS Annual Report 2021-22, MoSPI", "table": "A-1"
+    },
+    {
+      "year": "2021-22", "area": "Urban", "gender": "Female", "LFPR": 24.5, "WPR": 21.1, "UR": 13.9,
+      "source_doc": "PLFS Annual Report 2021-22, MoSPI", "table": "A-1"
+    },
+    {
+      "year": "2021-22", "area": "Urban", "gender": "Persons","LFPR": 41.5, "WPR": 37.6, "UR": 7.2,
+      "source_doc": "PLFS Annual Report 2021-22, MoSPI", "table": "A-1"
+    },
+    {
+      "year": "2022-23", "area": "Rural", "gender": "Male",   "LFPR": 60.8, "WPR": 59.2, "UR": 2.6,
+      "source_doc": "PLFS Annual Report 2022-23, MoSPI", "table": "A-1"
+    },
+    {
+      "year": "2022-23", "area": "Rural", "gender": "Female", "LFPR": 41.5, "WPR": 39.5, "UR": 4.8,
+      "source_doc": "PLFS Annual Report 2022-23, MoSPI", "table": "A-1"
+    },
+    {
+      "year": "2022-23", "area": "Rural", "gender": "Persons","LFPR": 51.4, "WPR": 49.6, "UR": 3.5,
+      "source_doc": "PLFS Annual Report 2022-23, MoSPI", "table": "A-1"
+    },
+    {
+      "year": "2022-23", "area": "Urban", "gender": "Male",   "LFPR": 59.0, "WPR": 55.3, "UR": 5.0,
+      "source_doc": "PLFS Annual Report 2022-23, MoSPI", "table": "A-1"
+    },
+    {
+      "year": "2022-23", "area": "Urban", "gender": "Female", "LFPR": 27.4, "WPR": 24.2, "UR": 11.7,
+      "source_doc": "PLFS Annual Report 2022-23, MoSPI", "table": "A-1"
+    },
+    {
+      "year": "2022-23", "area": "Urban", "gender": "Persons","LFPR": 43.9, "WPR": 40.5, "UR": 5.4,
+      "source_doc": "PLFS Annual Report 2022-23, MoSPI", "table": "A-1"
+    },
+    {
+      "year": "2023-24", "area": "Rural", "gender": "Male",   "LFPR": 62.1, "WPR": 60.7, "UR": 2.3,
+      "source_doc": "PLFS Annual Report 2023-24, MoSPI", "table": "A-1"
+    },
+    {
+      "year": "2023-24", "area": "Rural", "gender": "Female", "LFPR": 47.6, "WPR": 45.9, "UR": 3.6,
+      "source_doc": "PLFS Annual Report 2023-24, MoSPI", "table": "A-1"
+    },
+    {
+      "year": "2023-24", "area": "Rural", "gender": "Persons","LFPR": 55.2, "WPR": 53.6, "UR": 3.0,
+      "source_doc": "PLFS Annual Report 2023-24, MoSPI", "table": "A-1"
+    },
+    {
+      "year": "2023-24", "area": "Urban", "gender": "Male",   "LFPR": 60.0, "WPR": 56.9, "UR": 4.4,
+      "source_doc": "PLFS Annual Report 2023-24, MoSPI", "table": "A-1"
+    },
+    {
+      "year": "2023-24", "area": "Urban", "gender": "Female", "LFPR": 30.3, "WPR": 27.5, "UR": 9.2,
+      "source_doc": "PLFS Annual Report 2023-24, MoSPI", "table": "A-1"
+    },
+    {
+      "year": "2023-24", "area": "Urban", "gender": "Persons","LFPR": 46.0, "WPR": 43.0, "UR": 5.1,
+      "source_doc": "PLFS Annual Report 2023-24, MoSPI", "table": "A-1"
+    }
+  ]
+}

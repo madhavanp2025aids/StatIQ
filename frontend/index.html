@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StatGPT — Official Indian Statistics AI</title>
+  <meta name="description" content="StatGPT: AI-powered official Indian statistics from MoSPI — PLFS, CPI, GDP, IIP, ASI with source-backed answers, charts and tables." />
+  <meta name="keywords" content="MoSPI, India statistics, PLFS, CPI inflation, GDP India, IIP, ASI, AI assistant" />
+  <meta property="og:title" content="StatGPT — India Statistics AI" />
+  <meta property="og:description" content="Accurate, source-backed answers from official MoSPI datasets." />
+
+  <link rel="stylesheet" href="/static/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.29.1/dist/feather.min.js"></script>
+</head>
+<body>
+
+<!-- Background layers -->
+<div id="bg-canvas" aria-hidden="true"></div>
+<div class="bg-orb bg-orb-1" aria-hidden="true"></div>
+<div class="bg-orb bg-orb-2" aria-hidden="true"></div>
+<div class="bg-orb bg-orb-3" aria-hidden="true"></div>
+
+<div id="app">
+
+  <!-- ══════════════ SIDEBAR ══════════════ -->
+  <aside id="sidebar" role="complementary" aria-label="Navigation and datasets">
+
+    <div class="sidebar-header">
+      <div class="logo">
+        <div class="logo-icon" aria-hidden="true">S</div>
+        <div class="logo-text">
+          <strong>StatGPT</strong>
+          <span>MoSPI Data Assistant</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar-scroll">
+      <!-- Datasets -->
+      <div class="sidebar-section">
+        <p class="sidebar-label">Available Datasets</p>
+        <nav class="dataset-list" id="dataset-list" aria-label="MoSPI datasets"></nav>
+      </div>
+
+      <!-- Quick queries -->
+      <div class="sidebar-section">
+        <p class="sidebar-label">Quick Queries</p>
+        <div class="chip-list" id="chip-list" role="list" aria-label="Suggested queries"></div>
+      </div>
+    </div>
+
+    <!-- Footer: user card + mospi badge -->
+    <div class="sidebar-footer">
+      <div class="user-card" id="user-card" role="button" tabindex="0" aria-label="User account">
+        <div class="user-avatar" id="user-avatar">?</div>
+        <div class="user-info">
+          <div class="user-name" id="user-name">Guest</div>
+          <div class="user-role">MoSPI Statistics User</div>
+        </div>
+        <div class="user-logout" id="logout-btn" title="Sign out" aria-label="Sign out">⏻</div>
+      </div>
+      <div class="mospi-badge" role="note">
+        <div class="live-dot" aria-hidden="true"></div>
+        <div class="mospi-text">
+          <strong>Official MoSPI Data</strong>
+          mospi.gov.in · Govt. of India
+        </div>
+      </div>
+    </div>
+
+  </aside>
+
+  <!-- ══════════════ MAIN ══════════════ -->
+  <main id="main" role="main">
+
+    <!-- Top bar -->
+    <header id="topbar">
+      <div class="topbar-left">
+        <button class="icon-btn" id="menu-btn" aria-label="Toggle sidebar" data-tooltip="Menu">
+          <i data-feather="menu"></i>
+        </button>
+        <h1>StatGPT</h1>
+        
+        <!-- NEW: Tabs Navigation -->
+        <nav class="top-tabs" id="main-tabs" style="display: flex; gap: 10px; margin-left: 20px;">
+          <button class="tab-btn active" data-target="tab-upload">Upload</button>
+          <button class="tab-btn" data-target="tab-preview" style="display: none;">Preview</button>
+          <button class="tab-btn" data-target="tab-chat">Ask StatGPT</button>
+        </nav>
+        
+        <span class="query-count" id="query-count"></span>
+      </div>
+      <div class="topbar-right">
+        <button class="icon-btn" id="info-btn" aria-label="Dataset overview" data-tooltip="Dataset stats">
+          <i data-feather="bar-chart-2"></i>
+        </button>
+        <button class="icon-btn" id="reset-btn" aria-label="New conversation" data-tooltip="New chat">
+          <i data-feather="plus-square"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- NEW: Upload Tab -->
+    <section id="tab-upload" class="tab-content active" style="padding: 2rem; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+      <h2>Upload Dataset</h2>
+      <p style="color: var(--text-muted); margin-bottom: 2rem;">Upload your CSV or Excel dataset to begin analysis.</p>
+      <div style="background: var(--surface); padding: 2rem; border-radius: var(--radius-lg); border: 1px dashed var(--border); width: 100%; max-width: 500px; text-align: center;">
+        <input type="file" id="file-upload" accept=".csv, .xls, .xlsx" style="display: block; margin: 0 auto 1rem;" />
+        <button id="upload-submit-btn" class="primary-btn" style="padding: 0.75rem 1.5rem; background: var(--primary); color: white; border: none; border-radius: var(--radius); cursor: pointer;">Analyze Dataset</button>
+        <div id="upload-status" style="margin-top: 1rem; color: var(--text-muted);"></div>
+      </div>
+    </section>
+
+    <!-- NEW: Preview Tab -->
+    <section id="tab-preview" class="tab-content" style="display: none; padding: 2rem; overflow-y: auto; height: 100%;">
+      <h2>Dataset Overview</h2>
+      <p id="preview-summary" style="font-size: 1.1rem; color: var(--primary); margin-bottom: 2rem;"></p>
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
+        <div class="stat-card" style="background: var(--surface); padding: 1rem; border-radius: var(--radius);"><div style="color: var(--text-muted)">Rows</div><div id="prev-rows" style="font-size: 1.5rem; font-weight: bold;">-</div></div>
+        <div class="stat-card" style="background: var(--surface); padding: 1rem; border-radius: var(--radius);"><div style="color: var(--text-muted)">Columns</div><div id="prev-cols" style="font-size: 1.5rem; font-weight: bold;">-</div></div>
+        <div class="stat-card" style="background: var(--surface); padding: 1rem; border-radius: var(--radius);"><div style="color: var(--text-muted)">Missing Values</div><div id="prev-missing" style="font-size: 1.5rem; font-weight: bold;">-</div></div>
+        <div class="stat-card" style="background: var(--surface); padding: 1rem; border-radius: var(--radius);"><div style="color: var(--text-muted)">Duplicates</div><div id="prev-dupes" style="font-size: 1.5rem; font-weight: bold;">-</div></div>
+      </div>
+
+      <h3>Sample Rows</h3>
+      <div style="overflow-x: auto; background: var(--surface); border-radius: var(--radius); padding: 1rem;">
+        <table id="preview-table" style="width: 100%; border-collapse: collapse; text-align: left;">
+          <thead><tr id="preview-thead" style="border-bottom: 1px solid var(--border);"></tr></thead>
+          <tbody id="preview-tbody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Existing Chat Tab -->
+    <section id="tab-chat" class="tab-content" style="display: none; flex-direction: column; height: 100%;">
+      <!-- Chat messages -->
+      <section id="chat-container" role="log" aria-live="polite" aria-label="Conversation" style="flex: 1; overflow-y: auto;">
+
+        <!-- Welcome screen -->
+        <div id="welcome">
+          <div class="welcome-badge">📊 &nbsp; Powered by Official MoSPI Data</div>
+
+          <div class="welcome-logo" aria-hidden="true">
+            <div class="welcome-logo-icon">📊</div>
+            <div class="welcome-logo-ring"></div>
+          </div>
+
+          <h2 class="welcome-title">India's Statistics,<br>Explained Instantly</h2>
+          <p class="welcome-sub">
+            Ask anything about official MoSPI data — unemployment, inflation, GDP growth,
+            industrial production, and more. Every answer is source-backed with citations.
+          </p>
+
+          <!-- Starter query cards -->
+          <div class="welcome-cards" id="welcome-cards" role="list">
+            <div class="welcome-card" role="listitem" data-query="What is the unemployment rate in rural India for 2023-24?">
+              <div class="welcome-card-icon">👷</div>
+              <div class="welcome-card-title">Labour Force Statistics</div>
+              <div class="welcome-card-sub">Unemployment, LFPR, WPR from PLFS 2023-24</div>
+            </div>
+            <div class="welcome-card" role="listitem" data-query="What was CPI food inflation in July 2023?">
+              <div class="welcome-card-icon">📈</div>
+              <div class="welcome-card-title">Inflation &amp; Prices</div>
+              <div class="welcome-card-sub">Monthly CPI: General, Food, Fuel index trends</div>
+            </div>
+            <div class="welcome-card" role="listitem" data-query="What was India's GDP growth rate in 2023-24?">
+              <div class="welcome-card-icon">🏛️</div>
+              <div class="welcome-card-title">GDP &amp; National Accounts</div>
+              <div class="welcome-card-sub">NAS data: GDP, GVA, sector-wise growth rates</div>
+            </div>
+            <div class="welcome-card" role="listitem" data-query="Show IIP general index trend in 2023.">
+              <div class="welcome-card-icon">🏭</div>
+              <div class="welcome-card-title">Industrial Production</div>
+              <div class="welcome-card-sub">IIP: Mining, Manufacturing, Electricity indices</div>
+            </div>
+          </div>
+
+          <!-- Stats strip -->
+          <div class="welcome-stats" role="region" aria-label="Database statistics">
+            <div class="welcome-stat">
+              <div class="welcome-stat-num">150+</div>
+              <div class="welcome-stat-lbl">Data Records</div>
+            </div>
+            <div class="welcome-stat-sep" aria-hidden="true"></div>
+            <div class="welcome-stat">
+              <div class="welcome-stat-num">7</div>
+              <div class="welcome-stat-lbl">MoSPI Datasets</div>
+            </div>
+            <div class="welcome-stat-sep" aria-hidden="true"></div>
+            <div class="welcome-stat">
+              <div class="welcome-stat-num">2017–24</div>
+              <div class="welcome-stat-lbl">Time Coverage</div>
+            </div>
+            <div class="welcome-stat-sep" aria-hidden="true"></div>
+            <div class="welcome-stat">
+              <div class="welcome-stat-num">100%</div>
+              <div class="welcome-stat-lbl">Source-Backed</div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+    <!-- Input area -->
+    <div id="input-area" role="form" aria-label="Send a message">
+      <div class="input-container">
+        <div class="input-wrap">
+          <textarea
+            id="user-input"
+            placeholder="Ask about your dataset..."
+            rows="1"
+            aria-label="Your question to StatGPT"
+            aria-multiline="true"
+            autocomplete="off"
+            spellcheck="true"
+          ></textarea>
+          <div class="input-actions">
+            <button id="send-btn" aria-label="Send message" title="Send (Enter)">
+              <i data-feather="send"></i>
+            </button>
+          </div>
+        </div>
+        <div class="input-footer">
+          <span class="input-hint"><kbd>Enter</kbd> to send · <kbd>Shift+Enter</kbd> for new line</span>
+          <span class="char-count" id="char-count"></span>
+        </div>
+      </div>
+    </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════ INFO PANEL ══════════════ -->
+  <aside id="info-panel" role="complementary" aria-label="Dataset statistics">
+    <div class="info-inner">
+      <p class="info-title">📈 Dataset Overview</p>
+      <div id="info-stats"></div>
+    </div>
+  </aside>
+
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

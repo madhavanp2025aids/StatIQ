@@ -1,0 +1,36 @@
+{
+  "dataset": "Poverty",
+  "full_name": "Poverty Estimates",
+  "publisher": "NITI Aayog / MoSPI",
+  "description": "Estimates of poverty ratios across India.",
+  "indicators": {
+    "Poverty_Ratio": "Percentage of population below poverty line"
+  },
+  "unit": "Percent (%)",
+  "data": [
+    {
+      "year": "2004-05", "area": "Rural", "Poverty_Ratio": 41.8,
+      "source_doc": "Tendulkar Methodology", "table": "1"
+    },
+    {
+      "year": "2004-05", "area": "Urban", "Poverty_Ratio": 25.7,
+      "source_doc": "Tendulkar Methodology", "table": "1"
+    },
+    {
+      "year": "2004-05", "area": "Total", "Poverty_Ratio": 37.2,
+      "source_doc": "Tendulkar Methodology", "table": "1"
+    },
+    {
+      "year": "2011-12", "area": "Rural", "Poverty_Ratio": 25.7,
+      "source_doc": "Tendulkar Methodology", "table": "1"
+    },
+    {
+      "year": "2011-12", "area": "Urban", "Poverty_Ratio": 13.7,
+      "source_doc": "Tendulkar Methodology", "table": "1"
+    },
+    {
+      "year": "2011-12", "area": "Total", "Poverty_Ratio": 21.9,
+      "source_doc": "Tendulkar Methodology", "table": "1"
+    }
+  ]
+}

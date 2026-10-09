@@ -1,0 +1,65 @@
+{
+  "dataset": "ASI",
+  "full_name": "Annual Survey of Industries",
+  "publisher": "MoSPI, Government of India",
+  "description": "Annual estimates from factories registered under the Factories Act 1948. Covers number of factories, workers, output, value added, wages and capital investment.",
+  "unit": "Factories: Count | Workers: Thousands | Output/Value: ₹ Lakh Crore",
+  "data": [
+    {
+      "year": "2016-17",
+      "factories": 232155, "workers_thousands": 13860,
+      "output_LakhCrore": 112.6, "value_added_LakhCrore": 27.8,
+      "wages_LakhCrore": 3.12, "fixed_capital_LakhCrore": 55.9,
+      "top_sectors": ["Food Products", "Chemicals", "Basic Metals", "Textiles"],
+      "source_doc": "ASI 2016-17, MoSPI", "table": "Summary Results"
+    },
+    {
+      "year": "2017-18",
+      "factories": 238148, "workers_thousands": 14188,
+      "output_LakhCrore": 122.9, "value_added_LakhCrore": 29.9,
+      "wages_LakhCrore": 3.41, "fixed_capital_LakhCrore": 61.3,
+      "top_sectors": ["Food Products", "Chemicals", "Basic Metals", "Petroleum Products"],
+      "source_doc": "ASI 2017-18, MoSPI", "table": "Summary Results"
+    },
+    {
+      "year": "2018-19",
+      "factories": 249403, "workers_thousands": 14854,
+      "output_LakhCrore": 139.8, "value_added_LakhCrore": 33.6,
+      "wages_LakhCrore": 3.73, "fixed_capital_LakhCrore": 67.4,
+      "top_sectors": ["Petroleum Products", "Food Products", "Chemicals", "Basic Metals"],
+      "source_doc": "ASI 2018-19, MoSPI", "table": "Summary Results"
+    },
+    {
+      "year": "2019-20",
+      "factories": 244850, "workers_thousands": 14494,
+      "output_LakhCrore": 133.7, "value_added_LakhCrore": 32.5,
+      "wages_LakhCrore": 3.68, "fixed_capital_LakhCrore": 70.1,
+      "top_sectors": ["Petroleum Products", "Food Products", "Chemicals", "Basic Metals"],
+      "source_doc": "ASI 2019-20, MoSPI", "table": "Summary Results"
+    },
+    {
+      "year": "2020-21",
+      "factories": 222276, "workers_thousands": 13601,
+      "output_LakhCrore": 140.7, "value_added_LakhCrore": 33.7,
+      "wages_LakhCrore": 3.51, "fixed_capital_LakhCrore": 72.8,
+      "top_sectors": ["Petroleum Products", "Chemicals", "Food Products", "Basic Metals"],
+      "source_doc": "ASI 2020-21, MoSPI", "table": "Summary Results"
+    },
+    {
+      "year": "2021-22",
+      "factories": 258576, "workers_thousands": 15793,
+      "output_LakhCrore": 173.5, "value_added_LakhCrore": 40.8,
+      "wages_LakhCrore": 4.02, "fixed_capital_LakhCrore": 82.3,
+      "top_sectors": ["Petroleum Products", "Food Products", "Chemicals", "Basic Metals"],
+      "source_doc": "ASI 2021-22, MoSPI", "table": "Summary Results"
+    },
+    {
+      "year": "2022-23",
+      "factories": 268123, "workers_thousands": 16842,
+      "output_LakhCrore": 186.3, "value_added_LakhCrore": 44.1,
+      "wages_LakhCrore": 4.38, "fixed_capital_LakhCrore": 90.7,
+      "top_sectors": ["Petroleum Products", "Food Products", "Basic Metals", "Chemicals"],
+      "source_doc": "ASI 2022-23, MoSPI", "table": "Summary Results"
+    }
+  ]
+}

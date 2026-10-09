@@ -1,0 +1,60 @@
+{
+  "dataset": "Literacy",
+  "full_name": "Literacy Rate in India",
+  "publisher": "MoSPI, Government of India",
+  "description": "Estimates of literacy rates across India disaggregated by year, gender and area.",
+  "indicators": {
+    "Literacy_Rate": "Percentage of literates to total population aged 7 years and above"
+  },
+  "unit": "Percent (%)",
+  "data": [
+    {
+      "year": "2011", "area": "Rural", "gender": "Male", "Literacy_Rate": 77.15,
+      "source_doc": "Census 2011, MoSPI", "table": "1"
+    },
+    {
+      "year": "2011", "area": "Rural", "gender": "Female", "Literacy_Rate": 57.93,
+      "source_doc": "Census 2011, MoSPI", "table": "1"
+    },
+    {
+      "year": "2011", "area": "Rural", "gender": "Persons", "Literacy_Rate": 67.77,
+      "source_doc": "Census 2011, MoSPI", "table": "1"
+    },
+    {
+      "year": "2011", "area": "Urban", "gender": "Male", "Literacy_Rate": 88.76,
+      "source_doc": "Census 2011, MoSPI", "table": "1"
+    },
+    {
+      "year": "2011", "area": "Urban", "gender": "Female", "Literacy_Rate": 79.11,
+      "source_doc": "Census 2011, MoSPI", "table": "1"
+    },
+    {
+      "year": "2011", "area": "Urban", "gender": "Persons", "Literacy_Rate": 84.11,
+      "source_doc": "Census 2011, MoSPI", "table": "1"
+    },
+    {
+      "year": "2017-18", "area": "Rural", "gender": "Male", "Literacy_Rate": 80.7,
+      "source_doc": "NSO Report 2017-18", "table": "A-1"
+    },
+    {
+      "year": "2017-18", "area": "Rural", "gender": "Female", "Literacy_Rate": 64.5,
+      "source_doc": "NSO Report 2017-18", "table": "A-1"
+    },
+    {
+      "year": "2017-18", "area": "Rural", "gender": "Persons", "Literacy_Rate": 73.5,
+      "source_doc": "NSO Report 2017-18", "table": "A-1"
+    },
+    {
+      "year": "2017-18", "area": "Urban", "gender": "Male", "Literacy_Rate": 92.2,
+      "source_doc": "NSO Report 2017-18", "table": "A-1"
+    },
+    {
+      "year": "2017-18", "area": "Urban", "gender": "Female", "Literacy_Rate": 82.8,
+      "source_doc": "NSO Report 2017-18", "table": "A-1"
+    },
+    {
+      "year": "2017-18", "area": "Urban", "gender": "Persons", "Literacy_Rate": 87.7,
+      "source_doc": "NSO Report 2017-18", "table": "A-1"
+    }
+  ]
+}
